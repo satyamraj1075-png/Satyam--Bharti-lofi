@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satyam Raj | Lo-Fi</title>
+<meta name="description" content="Satyam Raj Lo-Fi — chill, relax and enjoy the vibes.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#070711;color:#fff;line-height:1.6;
+}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:30px;position:relative;overflow:hidden;
+  background:radial-gradient(circle at 50% 20%,#30205c 0,#11112b 35%,#070711 75%);
+}
+.hero:before{
+  content:"";position:absolute;width:600px;height:600px;border-radius:50%;
+  background:linear-gradient(135deg,#b35cff,#27d7ff);
+  filter:blur(100px);opacity:.16;
+}
+.content{position:relative;z-index:1;max-width:850px}
+.logo{
+  width:125px;height:125px;border:3px solid #8e7cff;border-radius:50%;
+  margin:0 auto 25px;display:grid;place-items:center;
+  font-size:35px;font-weight:800;letter-spacing:2px;
+  box-shadow:0 0 35px #735cff66;
+}
+h1{font-size:clamp(48px,10vw,92px);line-height:1.05;
+  background:linear-gradient(90deg,#d98cff,#62dfff);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{font-size:clamp(18px,3vw,27px);color:#c8c5d8;margin:18px 0 30px}
+.buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  text-decoration:none;color:#fff;padding:13px 23px;border-radius:30px;
+  border:1px solid #766cff;background:#15152a;transition:.2s
+}
+.btn:hover{transform:translateY(-3px);background:#242044}
+.primary{background:linear-gradient(90deg,#875cff,#28bfff);border:0}
+section{padding:80px 20px;max-width:1050px;margin:auto}
+h2{text-align:center;font-size:36px;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{
+  background:#10101d;border:1px solid #292941;border-radius:20px;padding:28px;
+  text-align:center;box-shadow:0 12px 30px #0004
+}
+.icon{font-size:42px;margin-bottom:10px}
+.card h3{margin-bottom:8px}
+.card p{color:#aaa8bb}
+footer{text-align:center;padding:30px;color:#8e8b9d;border-top:1px solid #20202e}
+footer b{color:#bbaeff}
+@media(max-width:600px){section{padding:60px 16px}.logo{width:105px;height:105px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="content">
+    <div class="logo">SR</div>
+    <h1>Satyam Raj</h1>
+    <p class="subtitle">🎧 LO-FI • CHILL • RELAX • GOOD VIBES 🌙</p>
+    <div class="buttons">
+      <a class="btn primary" href="#music">Listen Now</a>
+      <a class="btn" href="#about">Explore</a>
+    </div>
+  </div>
+</header>
+
+<section id="music">
+  <h2>🎵 My Music</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🌙</div><h3>Night Vibes</h3><p>Add your YouTube or music link here.</p></div>
+    <div class="card"><div class="icon">🌧️</div><h3>Rainy Lo-Fi</h3><p>Perfect beats for relaxing and studying.</p></div>
+    <div class="card"><div class="icon">🌆</div><h3>Late Night</h3><p>Chill sounds for peaceful evenings.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>✨ About</h2>
+  <div class="card">
+    <p>Welcome to <b>Satyam Raj Lo-Fi</b> — a place for calm beats, relaxing sounds and late-night vibes.</p>
+  </div>
+</section>
+
+<section>
+  <h2>📱 Follow Me</h2>
+  <div class="buttons">
+    <a class="btn primary" href="#" onclick="alert('Replace this # with your YouTube channel link!')">YouTube</a>
+    <a class="btn" href="#" onclick="alert('Replace this # with your Instagram link!')">Instagram</a>
+  </div>
+</section>
+
+<footer>© 2026 <b>Satyam Raj Lo-Fi</b> • Made with 🎧 & ❤️</footer>
+</body>
+</html>
